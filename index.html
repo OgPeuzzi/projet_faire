@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<title>Nombre Premier</title>
+</head>
+<body>
+	<div id="form">
+	<table border="1" bgcolor="beige">
+		<tr>
+			<td>
+			   <form>	
+					<h1>Jeu Dévinette :</h1>
+					&nbsp;&nbsp;<label>Choisir :</label>
+					<input type="number" max="10" min="0" id="nbre_saisie"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="submit" value="Jouer" id="play" onclick="tester"><br><br>
+					<label>Votre commentaire:</label><br>
+					<textarea></textarea><br><br>
+			   </form>
+			   <script type="text/javascript" src="nombrepremier.js">
+			   		function tester(){
+			   			var nbre_saisie=document.getElementById('nbre_saisie')
+			   			console.log(nbre_saisie.value)
+			   			var play=document.getElementById('play')
+			   			}
+			   </script>
+			</td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
